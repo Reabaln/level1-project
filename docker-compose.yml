@@ -1,0 +1,39 @@
+version: '3.5'
+services:
+  project-assessment-site:
+    image: level1-project/project-assessment-site
+    build: ./project-assessment-site
+    ports: 
+      - "8080:80"
+
+  person-service:
+    image: level1-project/person-service
+    build: ./person-service
+    ports:
+      - "8081:80"
+    depends_on:
+      - project-assessment-site
+
+  role-service:
+    image: level1-project/role-service
+    build: ./role-service
+    ports:
+      - "8082:80"
+    depends_on:
+      - project-assessment-site
+
+  department-service:
+    image: level1-project/department-service
+    build: ./department-service
+    ports:
+      - "8083:80"
+    depends_on:
+      - project-assessment-site
+
+  office-service:
+    image: level1-project/office-service
+    build: ./office-service
+    ports:
+      - "8084:80"
+    depends_on:
+      - project-assessment-site
