@@ -3,6 +3,6 @@ var app = express();
 
 app.use(express.static('public'))
 
-app.listen(8080, () => {
+app.listen(80, () => {
     console.log("Project Assessment Website: running on port 80");
 });
