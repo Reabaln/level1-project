@@ -2,11 +2,12 @@
 SHELL = /bin/bash
 Level1-project: 
 
-up:
-	docker-compose up -d
 
 down:
-	docker-compose down
+        docker-compose down
+
+up:
+	docker-compose up -d
 
 clean:
 	docker rm -f $$(docker ps -qa)

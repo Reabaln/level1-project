@@ -1,7 +1,5 @@
 .ONESHELL:
 SHELL = /bin/bash
-
-
 build:
 	docker build -t role-service .
 
@@ -10,7 +8,7 @@ run:
 
 logs:
 	docker logs role-service
-	
+
 stop:
 	docker stop role-service
 	
