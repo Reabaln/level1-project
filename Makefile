@@ -1,7 +1,5 @@
 .ONESHELL:
 SHELL = /bin/bash
-Level1-project: 
-
 
 down:
 	docker-compose down
