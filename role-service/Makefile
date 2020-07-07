@@ -6,7 +6,7 @@ build:
 	docker build -t role-service .
 
 run:
-	docker run -it -d -p 80:80 role-service
+	docker run -it -d -p 8082:80 role-service
 
 
 
