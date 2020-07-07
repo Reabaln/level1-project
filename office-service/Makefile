@@ -6,7 +6,7 @@ build:
 	docker build -t office-service .
 
 run:
-	docker run -it -d -p 80:80 office-service
+	docker run -it -d -p 8084:80 office-service
 
 logs:
 	docker logs office-service
