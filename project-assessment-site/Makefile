@@ -8,6 +8,9 @@ run:
 	docker run -it -d -p 8080:80 project-assessment-site 
 logs: 
 	docker logs project-assessment-site 
+	
+follow:
+	docker logs -f project-assessment-site
 
 stop: 
 	docker stop project-assessment-site 
