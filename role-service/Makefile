@@ -8,6 +8,7 @@ run:
 
 logs:
 	docker logs role-service
+
 stop:
 	docker stop role-service
 	
