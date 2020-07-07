@@ -1,7 +1,9 @@
 .ONESHELL:
 SHELL = /bin/bash
 Level1-project: 
-        pull up
+
+update:
+	sudo apt-get update 
 
 up:
 	docker-compose up -d
