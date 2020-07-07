@@ -16,7 +16,10 @@ logs:
 
 stop:
 	docker stop role-service
-
+	
+follow:
+	docker logs -f role-service
+	
 clean:
 	docker rm -f $$(docker ps -qa)
 	docker rmi $$(docker images -q)
