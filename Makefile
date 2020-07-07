@@ -2,9 +2,6 @@
 SHELL = /bin/bash
 Level1-project: 
 
-update:
-	sudo apt-get update 
-
 up:
 	docker-compose up -d
 
