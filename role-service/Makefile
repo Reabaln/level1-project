@@ -1,5 +1,6 @@
 .ONESHELL:
 SHELL = /bin/bash
+
 build:
 	docker build -t role-service .
 
