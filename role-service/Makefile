@@ -8,12 +8,9 @@ build:
 run:
 	docker run -it -d -p 8082:80 role-service
 
-
-
 logs:
 	docker logs role-service
-
-
+	
 stop:
 	docker stop role-service
 	
