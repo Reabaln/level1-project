@@ -1,6 +1,4 @@
 # Level 1 Assessment
-# How to run Project 
-
 
 ## Project Structure
 
