@@ -4,7 +4,7 @@ SHELL = /bin/bash
 build:
 	docker build -t person-service .
 run:
-	docker run -it -d -p 80:80 person-service
+	docker run -it -d -p 8081:80 person-service
 
 logs:
 	docker logs person-service
