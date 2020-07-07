@@ -10,11 +10,11 @@ install:
 	sudo apt install docker-compose
 	sudo apt-get install jq
 
+down:
+        docker-compose down
+
 up:
 	docker-compose up -d
-
-down:
-	docker-compose down
 
 clean:
 	docker rm -f $$(docker ps -qa)
