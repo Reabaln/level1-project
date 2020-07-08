@@ -1,6 +1,4 @@
 from bryandollery/maven-repo as build
-arg rebuild
-
 
 run git clone https://github.com/Reabaln/level1-project.git && \
     cd /root/level1-project/role-service  && \
